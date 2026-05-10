@@ -1,139 +1,20 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Avishek Pandey | Portfolio</title>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background: #0f172a;
-    color: white;
-}
-
-.navbar {
-    background: rgba(0,0,0,0.7);
-    backdrop-filter: blur(10px);
-}
-
-.hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('assets/img/hero-bg.JPEG');
-    background-size: cover;
-    background-position: center;
-}
-
-.hero img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid white;
-    margin-bottom: 20px;
-}
-
-.section-title {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.card {
-    background: #1e293b;
-    color: white;
-    border: none;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.portfolio-img {
-    height: 250px;
-    object-fit: cover;
-}
-
-footer {
-    background: #020617;
-}
-
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .portfolio-img {
-        height: auto;
-    }
-}
-</style>
-</head>
-<body>
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-<div class="container">
-<a class="navbar-brand" href="#">Avishek</a>
-
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-<span class="navbar-toggler-icon"></span>
-</button>
-
-<div class="collapse navbar-collapse" id="navMenu">
-<ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-<li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-</ul>
-</div>
-</div>
-</nav>
-
-
 <!-- Hero -->
-<section class="hero">
-<div class="container">
-<img src="assets/img/my-profile-img.jpg" alt="Profile">
+<section id="hero" class="hero">
+<div>
 <h1>Avishek Pandey</h1>
-<p>UI/UX Designer | Graphic Designer | Video Editor</p>
-
-<div class="mt-3">
-<a href="https://www.facebook.com/Abhishekpandey70" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
-<a href="https://www.instagram.com/ig_abhiofficial" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
-<a href="https://np.linkedin.com/in/avishek-pandey-5b361228b" class="text-white"><i class="bi bi-linkedin fs-4"></i></a>
-</div>
+<p>UI/UX Designer | Video Editor | Creative Designer</p>
 </div>
 </section>
 
 
 <!-- About -->
-<section id="about" class="py-5">
-<div class="container">
+<section id="about">
 <h2 class="section-title">About Me</h2>
-<p class="text-center">
-I’m a passionate UI/UX designer focused on creating modern,
-user-friendly digital experiences using Figma, Photoshop,
+<div class="modern-card">
+<p>
+I'm a passionate UI/UX designer focused on creating visually appealing,
+user-centered digital experiences using Figma, Photoshop,
 Illustrator and After Effects.
 </p>
 </div>
@@ -141,97 +22,67 @@ Illustrator and After Effects.
 
 
 <!-- Skills -->
-<section id="skills" class="py-5 bg-dark">
-<div class="container">
+<section id="skills">
 <h2 class="section-title">Skills</h2>
-
 <div class="row g-4">
-<div class="col-md-4">
-<div class="card p-4 text-center">
-<h4>UI/UX Design</h4>
-<p>Figma, Wireframing, Prototyping</p>
+<div class="col-md-4"><div class="modern-card">Figma & UI Design</div></div>
+<div class="col-md-4"><div class="modern-card">Photoshop & Branding</div></div>
+<div class="col-md-4"><div class="modern-card">After Effects & Motion Design</div></div>
 </div>
-</div>
+</section>
 
-<div class="col-md-4">
-<div class="card p-4 text-center">
-<h4>Graphic Design</h4>
-<p>Photoshop, Illustrator, Branding</p>
-</div>
-</div>
 
-<div class="col-md-4">
-<div class="card p-4 text-center">
-<h4>Video Editing</h4>
-<p>After Effects, Motion Graphics</p>
-</div>
-</div>
-</div>
+<!-- Resume -->
+<section id="resume">
+<h2 class="section-title">Resume</h2>
+<div class="modern-card">
+<h4>Education</h4>
+<p>Phoenix College of Management - BIT</p>
+
+<h4 class="mt-4">Experience</h4>
+<p>IT Assistant - Octagon InfoTech</p>
 </div>
 </section>
 
 
 <!-- Portfolio -->
-<section id="portfolio" class="py-5">
-<div class="container">
-<h2 class="section-title">My Work</h2>
+<section id="portfolio">
+<h2 class="section-title">Portfolio</h2>
 
 <div class="row g-4">
-
-<div class="col-md-4">
-<div class="card">
-<img src="assets/img/portfolio/product-1.jpg" class="portfolio-img w-100">
-<div class="p-3">
-<h5>E-Commerce App</h5>
-<p>Modern shopping UI design project.</p>
-</div>
-</div>
+<div class="col-md-4 portfolio-item">
+<img src="assets/img/portfolio/product-1.jpg">
 </div>
 
-<div class="col-md-4">
-<div class="card">
-<img src="assets/img/portfolio/branding-1.jpg" class="portfolio-img w-100">
-<div class="p-3">
-<h5>Brand Identity</h5>
-<p>Complete branding package design.</p>
-</div>
-</div>
+<div class="col-md-4 portfolio-item">
+<img src="assets/img/portfolio/branding-1.jpg">
 </div>
 
-<div class="col-md-4">
-<div class="card">
-<img src="assets/img/portfolio/books-1.jpg" class="portfolio-img w-100">
-<div class="p-3">
-<h5>Social Media Design</h5>
-<p>Marketing creatives and campaigns.</p>
-</div>
-</div>
-</div>
-
+<div class="col-md-4 portfolio-item">
+<img src="assets/img/portfolio/books-1.jpg">
 </div>
 </div>
 </section>
 
 
 <!-- Contact -->
-<section id="contact" class="py-5 bg-dark">
-<div class="container text-center">
+<section id="contact">
 <h2 class="section-title">Contact Me</h2>
-<p>Email me directly for collaborations or freelance projects.</p>
-
+<div class="contact-box">
+<p>Let's work together.</p>
 <a href="mailto:avishekpandey161@gmail.com" class="btn btn-primary btn-lg">
-<i class="bi bi-envelope"></i> Send Email
+Send Email
 </a>
 </div>
 </section>
 
-
-<!-- Footer -->
-<footer class="text-center py-4">
-<p>© 2026 Avishek Pandey. All Rights Reserved.</p>
-</footer>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+
 </body>
 </html>
-
